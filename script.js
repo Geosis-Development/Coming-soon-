@@ -352,7 +352,7 @@ setInterval(tick, 1000);
 
 
 
-const tabFrames = ['◂ come back ▸', '▸ come back ◂', '[ come back ]', '✦ come back ✦', '· · come back · ·'];
+const tabFrames = ['ERR: user_left', '> reconnecting_', '[ signal lost ]', '> awaiting input_'];
 let tabIdx   = 0;
 let tabTimer = null;
 
