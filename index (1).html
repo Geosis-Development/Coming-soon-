@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graft Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Italiana&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="C:\Users\ranji\Downloads\styles.css"/>
+</head>
+<body>
+
+ 
+  <canvas id="pixel-bg"></canvas>
+  <canvas id="glow-canvas"></canvas>
+  <div class="grid"></div>
+  <div class="scan"></div>
+  <div class="vignette"></div>
+
+ 
+  <canvas id="cur"></canvas>
+
+  
+  <svg class="pd pd-tl" width="52" height="52" viewBox="0 0 8 8">
+    <rect x="3" y="0" width="2" height="1" fill="#7fff5f"/>
+    <rect x="2" y="1" width="4" height="1" fill="#7fff5f"/>
+    <rect x="1" y="2" width="6" height="1" fill="#7fff5f"/>
+    <rect x="0" y="3" width="8" height="2" fill="#7fff5f"/>
+    <rect x="1" y="5" width="6" height="1" fill="#c8ff80"/>
+    <rect x="2" y="6" width="4" height="1" fill="#c8ff80"/>
+    <rect x="3" y="7" width="2" height="1" fill="#c8ff80"/>
+  </svg>
+  <svg class="pd pd-br" width="52" height="52" viewBox="0 0 8 8">
+    <rect x="3" y="0" width="2" height="1" fill="#7fff5f"/>
+    <rect x="2" y="1" width="4" height="1" fill="#7fff5f"/>
+    <rect x="1" y="2" width="6" height="1" fill="#7fff5f"/>
+    <rect x="0" y="3" width="8" height="2" fill="#7fff5f"/>
+    <rect x="1" y="5" width="6" height="1" fill="#c8ff80"/>
+    <rect x="2" y="6" width="4" height="1" fill="#c8ff80"/>
+    <rect x="3" y="7" width="2" height="1" fill="#c8ff80"/>
+  </svg>
+
+  
+  <div class="accent-bar"></div>
+
+
+  <span class="corner tl">SYS::ONLINE</span>
+  <span class="corner tr" id="clock">00:00:00</span>
+  <span class="corner bl">v0.1.0-beta</span>
+  <span class="corner br" id="coords">X:000 Y:000</span>
+
+
+  <div class="stage">
+    <p class="eyebrow">▸ signal detected ◂</p>
+    <h1>
+      Coming
+      <span class="word2">[ SOON ]</span>
+    </h1>
+    <div class="divider"><span>✦Software That Lives✦</span></div>
+    <p class="sub">
+      Something is growing in the machine.<br>
+      A signal shaped by what was and what’s next.<br>
+      Be first to receive the transmission.
+    </p>
+
+    <form class="notify-form" id="nform" action="https://formspree.io/f/mpqjbjyr" method="POST">
+      <input type="email" name="email" placeholder="your@signal.com" required autocomplete="email"/>
+      <button type="submit">Transmit</button>
+    </form>
+    <p class="success-msg" id="successMsg">▸ SIGNAL RECEIVED. STANDBY ◂</p>
+
+    <a href="https://discord.gg/your-invite-here" target="_blank" rel="noopener" class="discord-btn">
+      <svg width="19" height="15" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60.1 4.9A58.5 58.5 0 0 0 45.5.4a40 40 0 0 0-1.8 3.6 54.2 54.2 0 0 0-16.2 0A37.8 37.8 0 0 0 25.7.4 58.3 58.3 0 0 0 11 4.9C1.6 18.8-1 32.4.3 45.8a58.9 58.9 0 0 0 17.9 9 44 44 0 0 0 3.8-6.2 38.3 38.3 0 0 1-6-2.9l1.5-1.1a42 42 0 0 0 35.8 0l1.5 1.1a38.4 38.4 0 0 1-6 2.9 44 44 0 0 0 3.8 6.2 58.7 58.7 0 0 0 17.9-9C72.2 30.2 68.5 16.7 60.1 4.9ZM23.7 37.7c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2 6.5 3.2 6.4 7.2c0 4-2.8 7.2-6.4 7.2Zm23.6 0c-3.5 0-6.4-3.2-6.4-7.2s2.8-7.2 6.4-7.2 6.5 3.2 6.4 7.2c0 4-2.8 7.2-6.4 7.2Z" fill="currentColor"/>
+      </svg>
+      JOIN THE SERVER
+    </a>
+  </div>
+
+  <script src="C:\Users\ranji\Downloads\script (2).js"></script>
+</body>
+</html>
