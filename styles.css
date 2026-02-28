@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════════════
-   RESET & VARIABLES
-═══════════════════════════════════════════ */
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -28,13 +26,11 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: 'Space Mono', monospace;
-  /* cursor is set by script.js depending on device */
+ 
 }
 
 
-/* ═══════════════════════════════════════════
-   BACKGROUND LAYERS
-═══════════════════════════════════════════ */
+
 #pixel-bg {
   position: fixed;
   inset: 0;
@@ -113,9 +109,7 @@ body {
 }
 
 
-/* ═══════════════════════════════════════════
-   PIXEL CORNER DECORATIONS
-═══════════════════════════════════════════ */
+
 .pd {
   position: fixed;
   z-index: 4;
@@ -134,9 +128,7 @@ body {
 }
 
 
-/* ═══════════════════════════════════════════
-   CORNER LABELS
-═══════════════════════════════════════════ */
+
 .corner {
   position: fixed;
   font-family: 'VT323', monospace;
@@ -152,7 +144,7 @@ body {
 .bl { bottom: 1.2rem; left: 1.4rem; }
 .br { bottom: 1.2rem; right: 1.4rem; }
 
-/* Hide coord readout on touch devices (class added by JS) */
+
 .touch-device #coords { display: none; }
 
 /* Hide clock on very small screens */
@@ -161,9 +153,7 @@ body {
 }
 
 
-/* ═══════════════════════════════════════════
-   MAIN STAGE
-═══════════════════════════════════════════ */
+
 .stage {
   position: relative;
   z-index: 10;
@@ -176,9 +166,7 @@ body {
 }
 
 
-/* ═══════════════════════════════════════════
-   EYEBROW
-═══════════════════════════════════════════ */
+
 .eyebrow {
   font-family: 'VT323', monospace;
   font-size: clamp(0.85rem, 2.5vw, 1.05rem);
@@ -193,9 +181,7 @@ body {
 }
 
 
-/* ═══════════════════════════════════════════
-   TITLE
-═══════════════════════════════════════════ */
+
 h1 {
   font-family: 'Italiana', serif;
   font-size: clamp(3.8rem, 15vw, 13rem);
@@ -229,9 +215,7 @@ h1:hover .word2 {
 }
 
 
-/* ═══════════════════════════════════════════
-   DIVIDER
-═══════════════════════════════════════════ */
+
 .divider {
   display: flex;
   align-items: center;
@@ -260,9 +244,6 @@ h1:hover .word2 {
 }
 
 
-/* ═══════════════════════════════════════════
-   SUB TEXT
-═══════════════════════════════════════════ */
 .sub {
   font-size: clamp(0.62rem, 1.8vw, 0.7rem);
   letter-spacing: 0.12em;
@@ -275,9 +256,7 @@ h1:hover .word2 {
 }
 
 
-/* ═══════════════════════════════════════════
-   NOTIFY FORM
-═══════════════════════════════════════════ */
+
 .notify-form {
   display: flex;
   flex-wrap: wrap;
@@ -343,9 +322,7 @@ h1:hover .word2 {
 }
 
 
-/* ═══════════════════════════════════════════
-   SUCCESS MESSAGE
-═══════════════════════════════════════════ */
+
 .success-msg {
   font-family: 'VT323', monospace;
   font-size: 1.05rem;
@@ -358,9 +335,7 @@ h1:hover .word2 {
 }
 
 
-/* ═══════════════════════════════════════════
-   DISCORD BUTTON
-═══════════════════════════════════════════ */
+
 .discord-btn {
   display: inline-flex;
   align-items: center;
@@ -388,9 +363,7 @@ h1:hover .word2 {
 }
 
 
-/* ═══════════════════════════════════════════
-   MOBILE TAP RIPPLE ELEMENTS
-═══════════════════════════════════════════ */
+
 .tap-ripple {
   position: fixed;
   border-radius: 50%;
@@ -421,9 +394,7 @@ h1:hover .word2 {
 }
 
 
-/* ═══════════════════════════════════════════
-   SHARED ANIMATION
-═══════════════════════════════════════════ */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(14px); }
   to   { opacity: 1; transform: translateY(0); }
