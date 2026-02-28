@@ -62,9 +62,9 @@
       Be first to receive the transmission.
     </p>
 
-    <form class="notify-form" id="nform" action="https://formspree.io/f/mpqjbjyr" method="POST">
-      <input type="email" name="email" placeholder="your@signal.com" required autocomplete="email"/>
-      <button type="submit">Transmit</button>
+    <form class="notify-form" id="nform" onsubmit="handleSubmit(event)">
+        <input type="email" name="email" placeholder="your@signal.com" required autocomplete="email"/>
+        <button type="submit">Transmit</button>
     </form>
     <p class="success-msg" id="successMsg">▸ SIGNAL RECEIVED. STANDBY ◂</p>
 
