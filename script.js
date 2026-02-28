@@ -370,8 +370,21 @@ document.addEventListener('visibilitychange', () => {
 
 
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
-  document.getElementById('nform').style.display       = 'none';
-  document.getElementById('successMsg').style.display  = 'block';
+  const form = document.getElementById('nform');
+  const data = new FormData(form);
+
+  try {
+    await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+  } catch(err) {
+   
+  }
+
+  form.style.display = 'none';
+  document.getElementById('successMsg').style.display = 'block';
 }
